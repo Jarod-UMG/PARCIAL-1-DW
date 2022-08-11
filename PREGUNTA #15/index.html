@@ -1,0 +1,78 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>1er. Parcial</title>
+<LINK href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <header class="estilo_bloque">
+           <img class="img-circulo" src="img/foto_perfil.jpg">
+           <p>Jarod Mejía</p>
+           <nav>
+            <p>
+                <a href="#">Inicio</a> |
+                <a href="#">Php</a> |
+                <a href="#">.Net</a> |
+                <a href="#">Java</a> |
+            </p>
+        </nav>
+       </header>
+       <div class="estilo_bloque">
+		<figure align="justify">
+            <h3>Lenguajes de Programación</h3>
+                <ol type="1" start="1">
+                    <li >Paginas Web</li>
+                        <ul class="vi2">
+                            <li>Jsp</li>
+                            <li>Aspx</li>
+                            <li>Php</li>
+                        </ul>
+                    <li>Aplicaciones</li>
+                        <ul class="vi1">
+                            <li>Java</li>
+                            <li>Visual Basic</li>
+                            <li>C#</li>
+                        </ul>
+            </figure>
+       </div>
+       <div class="estilo_bloque">
+           <table>
+               <tr><td colspan="2">Programacion Web</td></tr>
+               <tr><td>Asp</td><td>Jsp</td></tr>
+               <tr><td>Php</td><td>Ruby</td></tr>
+               <tr><td>Python</td><td>Go</td></tr>
+           </table>
+       </div>
+       <div class="estilo_bloque">
+            <form>
+      <input type="text" id="txt_nombres" placeholder="Ingrese Nombres" required>
+      <input type="text" id="txt_apellidos" placeholder="Ingrese Apellidos" required>
+      <input type="number" id="txt_telefono" placeholder="Ingrese Numero Telefonico" required>
+      <input type="email" id="txt_correo" placeholder="Ingrese Correo Electronico" required>
+      <input type="date" id="txt_fn" placeholder="Ingrese Fecha Nacimiento" required>
+      <textarea id="txt_mensaje" placeholder="Ingrese el Mensaje"></textarea>
+    <input type="submit" class="boton" onclick="mensaje()">       
+    </form>
+       </div>
+       <div class="estilo_bloque" id="redes_sociales" >
+        <h3>Redes Sociales</h3>
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/twitter.png"></a>
+       </div>
+    </body>
+    <footer>
+            <p  align=center>Aprende a Programar
+                 Fácil y Rápido &copy;</p>
+    </footer>
+    <script>
+        function mensaje(){
+            var element = document.getElementById("txt_nombres").value;
+            var element1 = document.getElementById("txt_apellidos").value;
+            var element2 = document.getElementById("txt_telefono").value;
+            var element3 = document.getElementById("txt_correo").value;
+            var element4 = document.getElementById("txt_fn").value;
+            var element5 = document.getElementById("txt_mensaje").value;
+            alert(element + ' ' + element1 + ' ' +  element2 + ' ' +  element3 + ' ' +  element4 + ' ' +  element5);
+        }
+    </script>
+</html>
